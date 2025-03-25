@@ -1,0 +1,157 @@
+/* General body styling */
+body {
+    background-color: #f5d04e;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card styling */
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 400px;
+    text-align: left;
+    padding: 20px;
+    box-shadow: 10px 10px 0 0 black; /* Add shadow to the card */
+    margin: auto 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.author {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.author-span {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "figtree", sans-serif;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Footer styling */
+.attribution {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.firstheading{
+    background-color: #f5d04e;
+    color: black;
+    font-family: "figtree", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    width: 90px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+.secondheading{
+    color: black;
+    font-family: "figtree", sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.thirdheading{
+    color:black;
+    font-family: "figtree", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.para{
+    color:grey;
+    font-family: "figtree", sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
+}
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+        height: 100vh; /* Ensure the body takes full viewport height */
+        margin: 0;
+    }
+
+    .card {
+        max-width: 80%; /* Adjust card width for smaller screens */
+        padding: 15px; /* Reduce padding for better fit */
+        display: flex; /* Enable flexbox for card layout */
+        flex-direction: column; /* Stack content vertically */
+        justify-content: center; /* Center content inside the card */
+        align-items: center; /* Center content horizontally */
+        margin-top:50px;
+        margin-left: 20px; /* Center card horizontally */  
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+
+    }
+
+    .card-content {
+        padding: 10px; /* Reduce inner padding */
+    }
+
+    .avatar {
+        width: 30px; /* Adjust avatar size */
+        height: 30px;
+        margin-right: 8px; /* Adjust spacing */
+    }
+
+    .firstheading {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        padding: 8px;
+    }
+
+    .secondheading {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .thirdheading {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .para {
+        font-size: 10px; /* Adjust paragraph font size */
+    }
+
+    .attribution {
+        font-size: 10px; /* Adjust footer font size */
+        margin-bottom: 5px; /* Reduce bottom margin */
+        margin-top: auto;
+    }
+}
